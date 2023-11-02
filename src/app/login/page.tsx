@@ -1,13 +1,7 @@
 /** @format */
 
 import { initializeApp } from "firebase/app";
-import {
-  getAuth,
-  onAuthStateChanged,
-  signInWithEmailAndPassword,
-  SAMLAuthProvider,
-  signInWithPopup,
-} from "firebase/auth";
+import { getAuth, SAMLAuthProvider, signInWithPopup } from "firebase/auth";
 
 export default function Home() {
   const provider = new SAMLAuthProvider("saml.プロバイダー名");
