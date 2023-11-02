@@ -3,8 +3,8 @@ import "firebase/auth";
 
 export default function Home() {
   const firebaseConfig = {
-    apiKey: process.env.REACT_APP_FIREBASE_KEY,
-    authDomain: process.env.REACT_APP_FIREBASE_DOMAIN,
+    apiKey: process.env.NEXT_PUBLIC_FIREBASE_KEY,
+    authDomain: process.env.NEXT_PUBLIC_FIREBASE_DOMAIN,
   };
 
   firebase.initializeApp(firebaseConfig);
